@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section id="contact" class="container flex-lg cols-lg-2">
+            <h2>Nous contacter</h2>
+            <form method="post" action="envoi.html">
+                <h3>Formulaire de contact</h3>
+                <p>(*) Veuillez remplir tous les champs obligatoires</p>
+                <div class="form-row">
+                    <label for="nom">Votre nom (*)</label>
+                    <input id="nom" name="nom" type="text" value="" placeholder="Votre nom" maxlength="60" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">Votre email (*)</label>
+                    <input id="email" name="email" type="email" value="" placeholder="Votre adresse email" maxlength="100" required>
+                </div>
+                <div class="form-row">
+                    <label for="sujet">Sujet (*)</label>
+                    <input id="sujet" name="sujet" type="text" value="" placeholder="Le sujet de votre demande" maxlength="80" required>
+                </div>
+                <div class="form-row">
+                    <label for="message">Votre message (*)</label>
+                    <textarea id="message" name="message" rows="6" cols="40" placeholder="Entrez ici votre message" maxlength="500" required></textarea>
+                </div>
+                <div class="form-row">
+                    <input type="checkbox" name="rgpd" id="rgpd" value="1" required>
+                    <label for="rgpd">(*) En soumettant ce formulaire, j'accepte la <a href="#" target="_blank">politique de confidentialité</a> du site.</label>
+                </div>
+                <button class="btn" type="submit">Envoyer</button>
+            </form>
+            <aside>
+                <h3>Nos coordonnées</h3>
+                <address>
+                    14 Rue Edouard Mignot<br>
+                    51100 Reims<br>
+                    <a href="tel:+33320304050"><i class="fas fa-phone"></i> 03 20 30 40 50</a><br>
+                    <a href="mailto:contact@helloworld.fr"><i class="fas fa-envelope"></i> contact@helloworld.fr</a><br>
+                </address>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2603.8668864617202!2d4.021433499999999!3d49.25996889999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e97506d2ad6925%3A0xeff0ca1a9941afdc!2s14%20Rue%20Edouard%20Mignot%2C%2051100%20Reims!5e0!3m2!1sfr!2sfr!4v1664916166303!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </aside>
+        </section>
+    </main>
+</body>
+</html>
